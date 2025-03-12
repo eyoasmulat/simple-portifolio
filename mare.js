@@ -11,7 +11,7 @@ navLinks.forEach(link => {
 // Fade-in animation on scroll
 const fadeInElements = document.querySelectorAll('section');
 
-const options = {
+const observerOptions = {
     threshold: 0.2,
 };
 
@@ -22,7 +22,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             observer.unobserve(entry.target);
         }
     });
-}, options);
+}, observerOptions);
 
 fadeInElements.forEach(element => {
     element.classList.add('fade-out');
@@ -58,6 +58,37 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 });
 
+// Horizontal scroll for testimonials section
+const testimonialsContainer = document.querySelector('.testimonials .row');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+testimonialsContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    testimonialsContainer.classList.add('active');
+    startX = e.pageX - testimonialsContainer.offsetLeft;
+    scrollLeft = testimonialsContainer.scrollLeft;
+});
+
+testimonialsContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    testimonialsContainer.classList.remove('active');
+});
+
+testimonialsContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    testimonialsContainer.classList.remove('active');
+});
+
+testimonialsContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - testimonialsContainer.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scrolling speed
+    testimonialsContainer.scrollLeft = scrollLeft - walk;
+});
+
 // Add CSS animations dynamically
 const style = document.createElement('style');
 style.innerHTML = `
@@ -70,6 +101,20 @@ style.innerHTML = `
   .fade-in {
     opacity: 1;
     transform: translateY(0);
+  }
+  
+  .testimonials .row {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .testimonials .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonials .row.active {
+    cursor: grabbing;
   }
 `;
 document.head.appendChild(style);

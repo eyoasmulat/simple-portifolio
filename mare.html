@@ -10,217 +10,326 @@
   </head>
   <body>
    
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
-        <a class="navbar-brand" href="#">MARELGN</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav mx-end ">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testmonials">Testemonials</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact us</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="hero bg-dark bg-gradient text-white mt-5" id="hero">
-        <div class="container">
-           <div class="row">
-            <div class="col-md-6 pt-5">
-                <p class="text-uppercase" style="font:300" >Law Advice  <span class="text-danger">Engagiment</span></p>
-                <p class="py-5 pe-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis explicabo expedita consequuntur rem suscipit id autem corporis iste omnis quos possimus ad, magni, quam saepe minima. Nihil voluptas consequuntur eum?</p>
-                <a class="btn bg-danger px-3 mt-5 mb-sm-5" href="@Marelignt4">get us</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top shadow">
+      <div class="container">
+          <a class="navbar-brand font-weight-bold text-white" href="#">MARELGN</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#about">About us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#service">Service</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#contact">Contact us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  
+  <section class="hero bg-dark bg-gradient text-white d-flex align-items-center vh-100" id="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side (Text Content) -->
+            <div class="col-md-6 text-center text-md-left">
+                <h1 class="display-4 font-weight-bold">Law Advice <span class="text-danger">Engagement</span></h1>
+                <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita consequuntur rem suscipit id autem corporis iste omnis quos.</p>
+                <a class="btn btn-danger btn-lg mt-4 hover-grow" href="@Marelignt4">Get Us</a>
             </div>
-            <div class="col-md-6 mt-50px">
-                <img src="image/mar.jpg"  class="img-thumbnail mt-5 "style="width: 400px;"  alt="">
-            </div>
-           </div>
-        </div>
-      </section>
-      <section class="about bg-dark text-white py-5 text-center " id="about">
-        <div class="container">
-            <h1 class="mb-10 mt-5" >About us</h1>
-            <div class="row gap-5 py-3">
-                <div class="col-md-6 pe-5">
-                    <img src="image/photo-1589994965851-a8f479c573a9.avif " class="rounded pe-5 w-75% mt-5" style="width: 400px; height: 400px;"  alt="">
-                </div>
-                <div class="col-md-6 mt-5">
-                    <h1>what are working you ?</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel repudiandae est illum quo? Aut, nisi! Rem possimus dolorum sapiente, dolores provident, alias explicabo et, hic tempore veniam pariatur. Fuga, mollitia.
-                    </p>
-                    <h3>and we also do,</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident est nostrum distinctio tenetur nisi perferendis quaerat, eligendi, ipsam cum possimus, suscipit quo! Nesciunt veniam vitae fugiat iure. Illo, amet culpa!</p>
-                </div>
+
+            <!-- Right Side (Circular Image) -->
+            <div class="col-md-6 text-center">
+                <img src="image/mar.jpg" class="img-fluid rounded-circle shadow-lg hero-img" alt="Hero Image">
             </div>
         </div>
-      </section>
-      <section class="service py-5 text-center " id="service">
-        <div class="container">
-            <h1 class="mt-20">Our Services</h1>
-            <div class="row pt-5">
-              <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="image/desu.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Contract Signature</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Contact</a>
-                    </div>
+    </div>
+</section>
+
+<section class="about bg-dark text-white py-5 text-center" id="about">
+  <div class="container">
+      <h1 class="mb-4 mt-5 font-weight-bold text-uppercase">About Us</h1>
+      <div class="row align-items-center">
+          <!-- Left Side (Circular Image with Hover Effect) -->
+          <div class="col-md-6 text-center">
+              <img src="image/photo-1589994965851-a8f479c573a9.avif" class="img-fluid rounded-circle shadow-lg about-img" alt="About Us">
+          </div>
+
+          <!-- Right Side (Text Content) -->
+          <div class="col-md-6 text-md-left mt-4 mt-md-0">
+              <h2 class="font-weight-bold">What We Do?</h2>
+              <p class="lead">
+                  We provide top-notch legal services with a commitment to excellence. Our expertise ensures that you get the best legal advice tailored to your needs.
+              </p>
+              <h3 class="mt-4">Our Specialties</h3>
+              <p>
+                  From contract drafting to court representation, we handle all legal matters professionally and efficiently. Our team is dedicated to ensuring client satisfaction.
+              </p>
+              <a href="#contact" class="btn btn-danger btn-lg mt-3 hover-grow">Get in Touch</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="service py-5 text-center bg-light" id="service">
+  <div class="container">
+      <h1 class="mb-4 text-uppercase font-weight-bold">Our Services</h1>
+
+      <!-- First Row -->
+      <div class="row g-4 mb-4"> <!-- mb-4 adds space below the first row -->
+          <!-- Service Card 1 -->
+          <div class="col-md-4">
+              <div class="card service-card">
+                  <div class="img-container">
+                      <img src="image/desu.png" class="card-img-top" alt="Contract Signature">
+                      <div class="overlay"></div>
                   </div>
-                  
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem;">
-                  <img src="image/lawyer.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Court purpose</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Contact</a>
+                      <h5 class="card-title">Contract Signature</h5>
+                      <p class="card-text">We ensure legally binding contracts with expert guidance.</p>
+                      <a href="#" class="btn btn-primary">Contact</a>
                   </div>
-                </div>
-                
+              </div>
           </div>
+
+          <!-- Service Card 2 -->
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="image/law.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Writing a Document</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Contact</a>
-                </div>
+              <div class="card service-card">
+                  <div class="img-container">
+                      <img src="image/lawyer.png" class="card-img-top" alt="Court Purpose">
+                      <div class="overlay"></div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Court Representation</h5>
+                      <p class="card-text">Expert legal defense and representation in court.</p>
+                      <a href="#" class="btn btn-primary">Contact</a>
+                  </div>
               </div>
-              
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-              <img src="image/law.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Adiviser Service</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Contact</a>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="col-md-4">
+              <div class="card service-card">
+                  <div class="img-container">
+                      <img src="image/law.png" class="card-img-top" alt="Document Writing">
+                      <div class="overlay"></div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Legal Document Writing</h5>
+                      <p class="card-text">We draft legal documents with precision and clarity.</p>
+                      <a href="#" class="btn btn-primary">Contact</a>
+                  </div>
               </div>
-            </div>
-            
+          </div>
+      </div> <!-- End of First Row -->
+
+      <!-- Second Row -->
+      <div class="row g-4"> <!-- g-4 ensures spacing between columns -->
+          <!-- Service Card 4 -->
+          <div class="col-md-4">
+              <div class="card service-card">
+                  <div class="img-container">
+                      <img src="image/law.jpg" class="card-img-top" alt="Advisor Service">
+                      <div class="overlay"></div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Legal Advisory</h5>
+                      <p class="card-text">Consultation for businesses and individuals.</p>
+                      <a href="#" class="btn btn-primary">Contact</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="col-md-4">
+              <div class="card service-card">
+                  <div class="img-container">
+                      <img src="image/law.jpg" class="card-img-top" alt="Consultation">
+                      <div class="overlay"></div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Legal Consultation</h5>
+                      <p class="card-text">Expert advice on legal matters and disputes.</p>
+                      <a href="#" class="btn btn-primary">Contact</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="col-md-4">
+              <div class="card service-card">
+                  <div class="img-container">
+                      <img src="image/law.jpg" class="card-img-top" alt="Arbitration">
+                      <div class="overlay"></div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Arbitration Services</h5>
+                      <p class="card-text">Resolve disputes efficiently with expert mediation.</p>
+                      <a href="#" class="btn btn-primary">Contact</a>
+                  </div>
+              </div>
+          </div>
+      </div> <!-- End of Second Row -->
+  </div>
+</section>
+
+<section class="testimonials py-5 text-center" id="testimonials">
+  <div class="container">
+      <h1 class="mb-4 text-uppercase font-weight-bold text-white">Our Testimonials</h1>
+
+      <div class="testimonials-container">
+          <div class="testimonial-slider">
+              <!-- Testimonial 1 -->
+              <div class="card testimonial-card">
+                  <div class="img-container">
+                      <img src="image/porti.jpg" class="card-img-top" alt="Dessalegn Mulat">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Dessalegn Mulat</h5>
+                      <p class="card-text">"Amazing legal service! Highly recommended for professional support."</p>
+                  </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="card testimonial-card">
+                  <div class="img-container">
+                      <img src="image/Screenshot 2025-01-14 101927.png" class="card-img-top" alt="Natenale Alamer">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Natenale Alamer</h5>
+                      <p class="card-text">"Great consultation services. Helped me a lot with legal matters."</p>
+                  </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="card testimonial-card">
+                  <div class="img-container">
+                      <img src="image/Screenshot 2025-01-14 101843.png" class="card-img-top" alt="Haileeyesues Melesew">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Haileeyesues Melesew</h5>
+                      <p class="card-text">"Reliable and trustworthy. They handle everything with expertise!"</p>
+                  </div>
+              </div>
+
+              <!-- Testimonial 4 (New) -->
+              <div class="card testimonial-card">
+                  <div class="img-container">
+                      <img src="image/person4.jpg" class="card-img-top" alt="Samantha Johnson">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Samantha Johnson</h5>
+                      <p class="card-text">"Fantastic law firm! They guided me through the whole process."</p>
+                  </div>
+              </div>
+
+              <!-- Testimonial 5 (New) -->
+              <div class="card testimonial-card">
+                  <div class="img-container">
+                      <img src="image/person5.jpg" class="card-img-top" alt="Michael Lee">
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Michael Lee</h5>
+                      <p class="card-text">"Professional, friendly, and very knowledgeable. Highly recommend!"</p>
+                  </div>
+              </div>
+          </div>
       </div>
-            </div>
-        </div>
-      </section>
-      <section class="testemonials mt-5 text-center" id="testmonials">
-       <div class="conatiner mt-5">
-        <h1 class="mb-10 mt-5">Our Testmonials</h1>
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="image/porti.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Dessalegn Mulat</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
-                  <a href="#" class="btn btn-primary">Contact</a>
-                </div>
+  </div>
+</section>
+
+
+<section class="contact py-5 bg-dark text-white" id="contact">
+  <div class="container">
+      <h1 class="text-center mb-4 text-uppercase font-weight-bold">Contact Us</h1>
+
+      <div class="row">
+          <!-- Contact Information (Left Column) -->
+          <div class="col-md-6 text-center">
+              <h3 class="mb-3">Get in Touch</h3>
+              <p><i class="fas fa-map-marker-alt me-2"></i> 123 Main St, Your City</p>
+              <p><i class="fas fa-envelope me-2"></i> contact@example.com</p>
+              <p><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+              <div class="social-icons mt-4">
+                  <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                  <a href="#" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="#" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
               </div>
-              
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-              <img src="image/Screenshot 2025-01-14 101927.png" class="card-img-top" alt="...">
-              <div class="card-body card-body-hover">
-                <h5 class="card-title">Natenale Alamer</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Contact</a>
-              </div>
-            </div>
-            
+          </div>
+
+          <!-- Contact Form (Right Column) -->
+          <div class="col-md-6">
+              <form class="row g-3">
+                  <div class="col-md-6">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="First name">
+                  </div>
+                  <div class="col-md-6">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                  </div>
+                  <div class="col-md-12">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                  </div>
+                  <div class="col-md-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Your message here..."></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-danger mt-3 px-4">Send Message</button>
+                  </div>
+              </form>
+          </div>
       </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-            <img src="image/Screenshot 2025-01-14 101843.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Haileeyesues Melesew</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Contact</a>
-            </div>
+  </div>
+</section>
+
+<section class="footer text-white">
+  <div class="footer-overlay">
+      <div class="container py-4">
+          <div class="row text-center">
+              <!-- Navigation Links -->
+              <div class="col-md-6 mx-auto">
+                  <ul class="footer-links list-unstyled d-flex justify-content-center">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#service">Services</a></li>
+                      <li><a href="#testmonials">Testimonials</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+
+              <!-- Social Media Icons -->
+              <div class="col-md-6 mx-auto">
+                  <div class="social-icons mt-3">
+                      <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                      <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-2x"></i></a>
+                      <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                  </div>
+              </div>
           </div>
-          
-    </div>
-        </div>
-       </div>
-      </section>
-      <section class="contact py-5 bg-dark text-white" id="contact">
-         <h1 class="text-center">Contact Us</h1>
-         <form class="row g-3">
-          <div class="col-md-4">
-            <label for="inputEmail4" class="form-label">First name</label>
-            <input type="text" class="form-control mx-auto p-2" placeholder="First name" aria-label="First name">
-          </div>
-          <div class="col-md-4">
-            <label for="inputEmail4" class="form-label">Last name</label>
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-          </div>
-          <div class="col-md-4">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-        
-          <div class="col-4">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          
-          <div class="col-md-4">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4 form-floating ">
-            <label for="floatingTextarea2">Comments</label>
-            <textarea class="form-control mb-5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-           
-          </div>
-          <div class="col-12">
-            <button type="submit" class="submit btn btn-primary">Send it</button>
-          </div>
-        </form>
-      </section>
-      <section class="footer">
-    <div class="container" style=" background-image:url('image/photo-1589994965851-a8f479c573a9.avif')  ">
-      <div class="links">
-        <ul class="navbar-nav mx-end" >
-        <ul class="navbar-nav mx-end " >
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#service">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testmonials">Testemonials</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact us</a>
-            </li>
-        </ul>
-       
-        </div>
-      <hr>
-      <p>&copy;2025 Marelgn Teshome All rights reserved</p>
-    </div>
-      </section>
+
+          <hr class="bg-light my-4">
+
+          <!-- Copyright Section -->
+          <p class="text-center">&copy; 2025 Marelgn Teshome. All rights reserved.</p>
+      </div>
+  </div>
+</section>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="mare.js">  </script>
   </body>
