@@ -50,7 +50,9 @@
 
 /* 🔹 HERO SECTION */
 .hero {
+    padding-top: 56px;
     padding: 100px 0;
+    background-color: rgba(18, 18, 18, 0.7); /* Dark overlay for readability */
 }
 
 .hero-img {
@@ -266,46 +268,85 @@ section {
 
 /* 🔹 FOOTER */
 /* Footer Background with Overlay */
-.footer {
-   
-    position: relative;
-    padding: 40px 0;
-}
+body {  
+    font-family: 'Arial', sans-serif; /* Sets a clean font style */  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f8f9fa; /* Light background color for contrast */  
+    color: #343a40; /* Dark text for readability */  
+}  
 
-.footer-overlay {
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
-    /* padding: 30px 0; */
-}
+.footer {  
+    background-color: #23272b; /* Dark footer background */  
+    padding: 20px 0; /* Adds vertical padding */  
+}  
 
-/* Footer Links */
-.footer-links li {
-    display: inline-block;
-    margin: 0 15px;
-}
+.footer-overlay {  
+    position: relative;  
+}  
 
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
+.footer-links {  
+    margin: 0;  
+    padding: 0;  
+    list-style: none; /* Removes bullet points from list */  
+}  
 
-.footer-links a:hover {
-    color: #ff4d4d;
-    text-decoration: underline;
-}
+.footer-links li {  
+    margin: 0 15px; /* Horizontal spacing between links */  
+}  
 
-/* Social Icons */
-.social-icons a {
-    transition: transform 0.3s ease-in-out;
-}
+.footer-links a {  
+    color: #ffffff; /* White text color for links */  
+    text-decoration: none; /* Removes underline */  
+    font-weight: bold; /* Makes links bold */  
+    transition: color 0.3s; /* Smooth transition for hover effect */  
+}  
 
-.social-icons a:hover {
-    transform: scale(1.2);
-}
+.footer-links a:hover {  
+    color: #007bff; /* Link color on hover */  
+}  
 
-/* Copyright Section */
-.footer p {
-    font-size: 14px;
-    opacity: 0.8;
+.social-icons {  
+    margin-top: 20px; /* Space above social icons */  
+}  
+
+.social-icons a {  
+    color: #ffffff; /* White color for icons */  
+    transition: transform 0.3s; /* Smooth transform on hover */  
+}  
+
+.social-icons a:hover {  
+    transform: scale(1.1); /* Slightly enlarges icons on hover */  
+}  
+
+hr.bg-light {  
+    border-top: 1px solid #6c757d; /* Light horizontal line in footer */  
+}  
+
+text-center {  
+    text-align: center; /* Centers text */  
+}  
+
+@media (max-width: 768px) {  
+    .footer-links {  
+        flex-direction: column; /* Vertical alignment on smaller screens */  
+    }  
+
+    .footer-links li {  
+        margin: 10px 0; /* Vertical spacing for mobile */  
+    }  
+}  
+@media (max-width: 768px) {
+    .hero, .about, .testimonials, .contact {
+        min-height: auto;
+        padding: 50px 0;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    .hero {
+        padding-top: 70px; /* Adjust for smaller screens */
+    }
 }
